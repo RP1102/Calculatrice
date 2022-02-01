@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <button class="popup-btn" id="open-popup-btn">?</button>
+    <div id="popup">
+        <button class="popup-btn" id="close-popup-btn">×</button>
+        <h1>INFORMATION</h1>
+        <p>
+            La calculatrice n'est pas entierement fonctionnelle, 
+            la priorité sur les multiplication et division n'est
+            pas encore implémenté.
+        </p>
+    </div>
+
+    <div id="calculatrice">
+        <div id="result"> </div>
+        <div id="all-buttons">
+            <div class="calcu" id="firstRow">
+                <button class="btn-grey" id="ac">AC</button>
+                <button class="btn-grey">P/N</button>
+                <button class="btn-grey operator" value="%">%</button>
+                <button class="btn-orange operator" value="÷">÷</button>
+            </div>
+            <div class="calcu" id="secondRow">
+                <button class="number" id="seven" value="7">7</button>
+                <button class="number" id="eight" value="8">8</button>
+                <button class="number" id="nine" value="9">9</button>
+                <button class="btn-orange operator" value="×">x</button>
+            </div>
+            <div class="calcu" id="thirdRow">
+                <button class="number" id="four" value="4">4</button>
+                <button class="number" id="five" value="5">5</button>
+                <button class="number" id="six" value="6">6</button>
+                <button class="btn-orange operator" value="-">-</button>
+            </div>
+            <div class="calcu" id="fourthRow">
+                <button class="number" id="one" value="1">1</button>
+                <button class="number" id="two" value="2">2</button>
+                <button class="number" id="three" value="3">3</button>
+                <button class="btn-orange operator" value="+">+</button>
+            </div>
+            
+            <div class="calcu" id="fifthRow">
+                <button class="number" id="zero" value="0">0</button>
+                <button>,</button>
+                <button class="btn-orange operator" value="=" id="equal">=</button>
+            </div>
+        </div>
+        <!-- <script src="js/index.js"></script> -->
+        <script src="js/otherButtons.js"></script>
+        <script src="js/pseudoCode.js"></script>
+    </div>  
+</body>
+</html>
